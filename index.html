@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+   
+<script>
+    function ButtonPress(){
+        const currentValue = document.getElementById("btn").innerHTML;
+        const currentCounter = currentValue.split(" ")[1];
+        const newCounter = parseInt(currentCounter) + 1;
+        document.getElementById("btn").innerHTML = "Counter "  + newCounter;
+    }
+</script>
+<script>
+    function GetSign(){
+        const currentValue = document.getElementById("sign").innerHTML;
+        const currentSign = currentValue.split(" ")[1];
+        const newSign = parseInt(currentSign) + 1;
+        document.getElementById("sign").innerHTML = "Number " + newSign;
+    }
+</script>
+<body>
+    
+    <button onclick="ButtonPress()" id="btn">Counter 0</button>
+    <br></br>
+    <button onclick="GetSign()" id="sign">Number 0</button>
+</body>
+</html>
